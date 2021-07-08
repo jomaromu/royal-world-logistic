@@ -1,0 +1,24 @@
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item  {{ slide.active }}" data-bs-interval="4000" *ngFor="let slide of slides">
+            <img src="{{ slide.img }}" class="d-block w-100" alt="..." />
+            <div class="carousel-caption  d-md-block">
+                <h5 class="tituloCarousel animate__animated animate__backInUp" id="tituloc" style="text-shadow: 2px 2px #292965e1;">
+                    {{ slide.txt }}
+                </h5>
+            </div>
+            <div id="textoDescriptivo">
+                <p class="animate__animated animate__backInLeft animate__slow">{{slide.desc}}</p>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

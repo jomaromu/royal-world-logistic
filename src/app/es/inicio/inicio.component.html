@@ -1,0 +1,139 @@
+<header id="Inicio">
+    <!-- <video [src]="video" class="vid-bg" autoplay loop muted></video> -->
+    <video src="../../../assets/video.old.mp4" class="vid-bg" #video>
+    </video>
+    <div class="nav-area">
+
+        <div class="logo">
+            <img src="../../../assets/logo.png" alt="">
+        </div>
+        <i class="fas fa-bars" id="barra"></i>
+        <ul class="menu-area">
+            <li class="borde"><a href="#Inicio">Inicio</a></li>
+            <li class="borde"><a href="#AcercaNosotros">Acerca de nosotros</a></li>
+            <li class="borde"><a href="#nuestrosServicios">Servicios</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+            <li>
+                <select name="" id="idioma" (change)="selectIdioma($event)">
+                    <option routerLink="/inicio" value="es">Es</option>
+                    <option routerLink="/home" value="en">En</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+
+    <div id="menu-responsivo" class="animate__animated">
+        <i class="far fa-times-circle" id="cerrarRes"></i>
+        <ul class="menu-area-responsivo">
+            <li class="res"><a href="#Inicio">Inicio</a></li>
+            <li class="res"><a href="#AcercaNosotros">Acerca de nosotros</a></li>
+            <li class="res"><a href="#nuestrosServicios">Servicios</a></li>
+            <li class="res"><a href="#contacto">Contáctenos</a></li>
+            <li id="idioma">
+                <select name="" id="idioma" (change)="selectIdioma($event)">
+                    <option value="es">Es</option>
+                    <option value="en">En</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+
+    <!--Banner-->
+
+    <div class="banner-text">
+        <h2 class="banner2" style="text-shadow: 1px 1px black;">Royal World <span class="color2">Logistics</span></h2>
+        <p style="font-size: 1.4rem !important; text-shadow: 1px 1px black;"> Su aliado estratégico con más de 20 años en el marcado. </p>
+        <a href="#contacto" class="btn">Contáctenos</a>
+        <div id="divImgBanner" style="position: absolute; top: -250px; left: 150px; width: 200px; height: 200px;">
+            <img src="../../../assets/logo-grande.png" style="width: 100%;" alt="">
+        </div>
+    </div>
+</header>
+<!--Acerca de nosotros-->
+
+<div class="row" id="AcercaNosotros">
+    <div id="colAcerca">
+        <div id="colNosotros">
+            <div id="divImgSobre">
+                <img src="../../../assets/acerca.png" id="imgSobre" alt="Sobre Nosotros" />
+            </div>
+            <div id="divSobreNosotros">
+                <h1 class="txtAcerca" style="margin-bottom: 25px;">Acerca de nosotros</h1>
+                <p class="txtdescrip">
+                    Somos una empresa de capital panameño especializada en brindar a nuestros clientes un servicio
+                    personalizado en el manejo de sus mercancías. Nos encargamos de resolver todos sus problemas
+                    vinculados, con el transporte, consolidación, almacenajes, manejo,
+                    embalaje y distribución de sus productos tanto nacional como internacional.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Acerca de nosotros-->
+
+<!-- Mision Vision-->
+<div class="row justify-content-center" id="areaAzul">
+    <div class="col-4 divRow">
+        <h1 class="titulo">Misión</h1>
+        <p class="concepto">
+            Ofrecer un servicio especializado y personalizado, garantizando la entrega de soluciones logisticas
+            integrales de acuerdo a la necesidades de nuestros clientes, de manera oportuna y eficiente
+        </p>
+    </div>
+
+    <div class="col-4 divRow">
+        <h1 class="titulo">Visión</h1>
+        <p class="concepto">
+            Convertirnos en los socios comerciales que brinden un valor real a nuestros clientes.
+        </p>
+    </div>
+</div>
+<!-- Fin Mision Vision-->
+
+<!-- Servicios-->
+<div id="nuestrosServicios">
+    <h1 class="serviciosTodo">Nuestros servicios</h1>
+</div>
+
+<app-carrusel></app-carrusel>
+
+<!--Fin Servicios-->
+
+<!--Contactenos-->
+
+<div id="nuestrosServicios">
+    <h1 class="serviciosTodo" id="contacto">Contáctenos</h1>
+</div>
+<div class="cards">
+    <div class="card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3 class="tituloContacto">Teléfonos</h3>
+        <p class="descripcionContacto">(+507) 6838-9824 <br> (+507) 6440-7575</p>
+    </div>
+
+    <div class="card">
+        <i class="far fa-building"></i>
+        <h3 class="tituloContacto">Ubicación</h3>
+        <p class="descripcionContacto">
+            Zona libre Colón, Panamá - Ave, Sta Isabel Edific. Cofrisa No.4, local N°18
+        </p>
+    </div>
+
+    <div class="card">
+        <i class="far fa-comment-dots"></i>
+        <h3 class="tituloContacto">Correo eléctronico</h3>
+        <p class="descripcionContacto">ventas@royalwlogistics.com</p>
+    </div>
+</div>
+
+<!--Fin Contactenos-->
+
+<div class="card-footer">
+    <div id="texto">
+        <span> ©2021 Royal World Logistics</span> <span> | </span> <span>Todos los derechos reservados</span>
+    </div>
+
+    <div id="redesSociales">
+        <a href="https://api.whatsapp.com/send?phone=50768389824&text=Hola,%20quisiera%20hacerle%20una%20pregunta" target="_blank"><i id="whatsaap" class="fab fa-whatsapp"></i></a>
+    </div>
+</div>
